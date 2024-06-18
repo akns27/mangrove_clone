@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>새로운 방식으로 살아보는 뉴리빙 커뮤니티, 맹그로브</title>
+  <title>맹그로브, 새로운 방식으로 살아보는 뉴리빙 커뮤니티</title>
+  <!-- 운용의 용이성 중. 쉬운 네비게이션 사용 -->
   <link href="./reset.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,8 +25,8 @@
     </div>
   </div>
   <div class="hero-container">
-    <img src="./assets/hero_image.png" class="hero-img">
-    <img src="assets/logo_white.svg" class="hero-logo">
+    <img src="./assets/hero_image.png" class="hero-img" alt="맹그로브 하우스 내부를 보여주는 메인페이지 이미지">
+    <img src="assets/logo_white.svg" class="hero-logo" alt="로고">
     <div class="content">새로운 방식으로 살아보는 뉴리빙 커뮤니티, 맹그로브</div>
     <div class="cta-buttons">
       <div class="cta-btn">
@@ -32,7 +34,7 @@
           <div class="btn-title">Live</div>
           <div class="btn-text-container">
             <div class="btn-text">살아보기</div>
-            <img src="assets/arrow-right.svg">
+            <img src="assets/arrow-right.svg" alt="오른쪽 화살표">
           </div>
         </div>
       </div>
@@ -41,7 +43,7 @@
           <div class="btn-title">Stay</div>
           <div class="btn-text-container">
             <div class="btn-text">머물러보기</div>
-            <img src="assets/arrow-right.svg">
+            <img src="assets/arrow-right.svg" alt="오른쪽 화살표">
           </div>
         </div>
       </div>
@@ -50,7 +52,7 @@
           <div class="btn-title">Work & Stay</div>
           <div class="btn-text-container">
             <div class="btn-text">떠나고 일하기</div>
-            <img src="assets/arrow-right.svg">
+            <img src="assets/arrow-right.svg" alt="오른쪽 화살표">
           </div>
         </div>
       </div>
@@ -59,59 +61,26 @@
 
   <div class="container">
     <div class="sidebar">
-      <h1>Locations</h1>
+      <h1 class="sidebar-title">Locations</h1>
       <p>다양한 라이프스타일이 담긴 맹그로브의 지점들을 살펴보세요.</p>
     </div>
     <div class="main-content">
 
-      <div class="card">
-        <div class="arrow">&lt;</div>
-        <img src="./assets/맹그로브 신촌.svg" alt="맹그로브 신촌">
+      <div class="card-2">
+        <img src="./assets/맹그로브 신촌.svg" alt="맹그로브 신촌" alt="맹그로브 신촌의 외관을 선처럼 그린 그림">
         <div class="card-title">맹그로브 신촌</div>
         <div class="card-description">활기찬 도시 인프라와 편리한 일상을 누리는 코리빙 하우스</div>
         <div class="btn-container">
           <a href="#" class="btn live">Live</a>
         </div>
       </div>
-      <div class="card">
-        <img src="./assets/맹그로브 동대문.svg" alt="맹그로브 동대문">
+      <div class="card-2">
+        <img src="./assets/맹그로브 동대문.svg" alt="맹그로브 동대문" alt="맹그로브 동대문의 외관을 선처럼 그린 그림">
         <div class="card-title">맹그로브 동대문</div>
         <div class="card-description">교통, 문화의 중심지에서 여행하듯 머무는 코리빙 하우스</div>
         <div class="btn-container">
           <a href="#" class="btn live">Live</a>
           <a href="#" class="btn stay">Stay</a>
-        </div>
-        <div class="arrow">&gt;</div>
-      </div>
-    </div>
-  </div>
-  <div class="community-container">
-    <div class="community-sidebar">
-      <h1>Community</h1>
-      <p>맹그로브의 유쾌한 커뮤니티를 경험해보세요.</p>
-      <a href="#">더보기 &rarr;</a>
-    </div>
-    <div class="community-main-content">
-      <img src="./assets/community_banner.svg" alt="MSC">
-      <div class="community-description">
-        MSC(Mangrove Social Club)는 건강한 일상을 가꾸고, 자기다운 성장을 돕는 맹그로브의 웰니스 커뮤니티입니다.
-      </div>
-      <div class="community-features">
-        <div class="community-feature">
-          <h2>Mindfulness</h2>
-          <p>명상과 요가, 좋은 음식들로 지친 나를 돌보고 회복하는 시간들을 만들어 갑니다.</p>
-        </div>
-        <div class="community-feature">
-          <h2>Daybreak</h2>
-          <p>평소 관심이 있었지만 선뜻 도전하지 못했던 일들을 이웃과 함께 시도해 보세요.</p>
-        </div>
-        <div class="community-feature">
-          <h2>Inspiration</h2>
-          <p>인사이트를 나누는 강연, 홈 라이브 공연 등 맹그로브에서 크고 작은 영감의 계기를 경험할 수 있습니다.</p>
-        </div>
-        <div class="community-feature">
-          <h2>Changemaker</h2>
-          <p>나와 이웃에서 더 나아가 지역과 사회에 대해서도 생각합니다. 세상의 다양한 관점을 이해할 수 있습니다.</p>
         </div>
       </div>
     </div>
@@ -119,32 +88,15 @@
 
   <div class="journal-container">
     <div class="journal-sidebar">
-      <h1>Journal</h1>
+      <h1 class="sidebar-title">Journal</h1>
       <p>맹그로브의 홈라이프와 컬처 소식을 살펴보세요.</p>
-      <a href="#">더보기 &rarr;</a>
+      <div class="arrow-text-container">
+        <a href="#">더보기</a>
+        <img src="assets/bigArrow.svg">
+      </div>
     </div>
     <div class="journal-main-content">
-      <div class="journal-card">
-        <img src="./assets/김연희_한재민.svg" alt="김연희&한재민">
-        <div class="journal-card-content">
-          <div class="journal-card-title">우연한 만남이 시작되는 집 (2)</div>
-          <div class="journal-card-description">[Knock & Talk] 건연희&한재민 인터뷰</div>
-        </div>
-      </div>
-      <div class="journal-card">
-        <img src="./assets/김현수_전혜정.svg" alt="김현수&전혜정">
-        <div class="journal-card-content">
-          <div class="journal-card-title">우연한 만남이 시작되는 집 (1)</div>
-          <div class="journal-card-description">[Knock & Talk] 김현수&전혜정 인터뷰</div>
-        </div>
-      </div>
-      <div class="journal-card">
-        <img src="./assets/최낙현.svg" alt="맹그로브 신촌 308호 거주자 최낙현">
-        <div class="journal-card-content">
-          <div class="journal-card-title">혼자가 아닌 셋이 함께 살아서 다행이에요 마치 가족처럼요.</div>
-          <div class="journal-card-description">[Knock & Talk] 맹그로브 신촌 308호 최낙현 인터뷰</div>
-        </div>
-      </div>
+      <div id="card-container" class="container-row"></div>
     </div>
   </div>
 
