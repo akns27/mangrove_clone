@@ -1,9 +1,9 @@
-.hero-container {
+.hero_container {
   position: relative;
   height: 100vh;
 }
 
-.hero-img {
+.hero_image {
   width: 100vw;
   height: 100%;
   object-fit: cover;
@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.hero-logo {
+.hero_logo {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -21,9 +21,9 @@
   transform: translate(-50%, -50%);
 }
 
-.content {
+.hero_content {
   position: absolute;
-  bottom: 13.81rem; /* 원하는 위치로 조정 */
+  bottom: 13.81rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -33,10 +33,10 @@
   font-size: 1.90375rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.88rem; /* 151.28% */
+  line-height: 2.88rem;
 }
 
-.header {
+.main_header {
   position: fixed;
   top: 0;
   z-index: 10;
@@ -49,13 +49,12 @@
   padding-bottom: 1.37rem;
 }
 
-.link-container {
+.nav_links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.25rem;
   color: #000;
-
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 900;
@@ -68,7 +67,7 @@
   padding-left: 1.37rem;
 }
 
-.book-btn {
+.book_button {
   display: flex;
   padding: 0.5625rem 1.1875rem;
   justify-content: center;
@@ -77,7 +76,7 @@
   background: #fff;
 }
 
-.cta-buttons {
+.hero_cta_buttons {
   display: flex;
   gap: 1.24rem;
   position: absolute;
@@ -87,37 +86,35 @@
   z-index: 2;
 }
 
-.cta-btn {
+.cta_button {
   display: flex;
   width: 16.06813rem;
   height: 4.88263rem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  border: 1px solid #000;
-  background: #fff;
   align-items: center;
   justify-content: center;
+  border: 1px solid #000;
+  background: #fff;
   cursor: pointer;
 }
 
-.cta-btn-text {
+.cta_button_text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.375rem;
 }
 
-.btn-title {
+.button_title {
   color: #000;
   text-align: center;
   font-size: 1.4375rem;
   font-style: normal;
   font-weight: 900;
-  line-height: 1.86875rem; /* 130% */
+  line-height: 1.86875rem;
 }
 
-.btn-text {
+.button_text {
   color: #000;
   text-align: center;
   font-size: 1rem;
@@ -126,14 +123,13 @@
   line-height: normal;
 }
 
-.btn-text-container {
+.button_text_wrapper {
   display: flex;
   align-items: flex-start;
-
   gap: 0.375rem;
 }
 
-.container {
+.main_content {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
@@ -145,7 +141,7 @@
   padding-right: 2rem;
 }
 
-.sidebar-title {
+.sidebar_title {
   color: #1f1e1d;
   font-family: "Attila Sans Classic";
   font-size: 1.875rem;
@@ -155,132 +151,73 @@
   padding-bottom: 1.4rem;
 }
 
-.main-content {
+.sidebar_description {
+  color: #1f1e1d;
+  font-family: "Noto Sans KR";
+  font-size: 1.11619rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 161.26% */
+}
+
+.content_area {
   flex: 3;
   display: flex;
   gap: 2rem;
   overflow: hidden;
 }
 
-.card-2 {
-  flex: 1;
+.location_card {
+  display: flex;
   min-width: 300px;
-  /* border-left: 1px solid #000;
-  border-right: 1px solid #000; */
   text-align: center;
+  padding: 0rem 4.375rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.375rem;
 }
 
-.card-2 img {
+.location_card img {
   max-width: 100%;
   height: auto;
 }
 
-.card-title {
+.card_title {
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 1rem;
 }
 
-.card-description {
+.card_description {
   margin-top: 1rem;
 }
 
-
-
-.card-container {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-}
-
-.arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0 1rem;
-}
-
-.arrow-left {
-  border-right: 1px solid #000;
-}
-
-.arrow-right {
-  border-left: 1px solid #000;
-}
-
-.journal-container {
+.journal_section {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
 }
 
-.journal-sidebar {
+.journal_sidebar {
   flex: 1;
   min-width: 300px;
-  background-color: #f7f2e9;
   padding: 2rem;
 }
 
-.journal-sidebar h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.journal-sidebar p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
-
-.journal-sidebar a {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.journal-main-content {
+.journal_content {
   flex: 3;
   padding: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.card_slider {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
+  width: 900px;
 }
 
-.journal-card {
-  flex: 1;
-  min-width: 300px;
-  background-color: #fff;
-  /* border: 1px solid #ccc; */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  overflow: hidden;
-}
-
-.journal-card img {
-  width: 100%;
-  height: auto;
-}
-
-.journal-card-content {
-  padding: 1rem;
-}
-
-.journal-card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.journal-card-description {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-.footer-container {
+.main_footer {
   background-color: #000;
   color: #fff;
   padding: 2rem;
@@ -289,7 +226,7 @@
   align-items: center;
 }
 
-.footer-top {
+.footer_top {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -299,44 +236,29 @@
   margin-bottom: 2rem;
 }
 
-.footer-logo {
+.footer_logo {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.footer-description {
+.footer_description {
   flex: 1;
   margin-left: 2rem;
   font-size: 1rem;
 }
 
-.footer-link {
+.footer_link {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
 }
 
-.footer-bottom {
+.footer_bottom {
   width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
 }
-
-.footer-bottom div {
-  flex: 1;
-  padding: 0 1rem;
-}
-
-.footer-bottom div:first-child {
-  padding-left: 0;
-}
-
-.footer-bottom div:last-child {
-  padding-right: 0;
-  text-align: right;
-}
-
 .live-grow-container {
   display: flex;
   flex-direction: column;
@@ -597,8 +519,8 @@
 .journal-main-content {
   flex: 3;
   padding: 2rem;
-  overflow-x: auto; 
-  white-space: nowrap; 
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .container-row {
@@ -608,9 +530,9 @@
 }
 
 .card {
-  flex: 0 0 300px; 
+  flex: 0 0 300px;
   text-align: center;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .arrow-text-container {
@@ -623,3 +545,58 @@
   gap: 0.38813rem;
 }
 
+.btn {
+  display: flex;
+  width: 2.94813rem;
+  height: 1.51813rem;
+  padding: 0.2rem 0.6125rem 0.2rem 0.6125rem;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  letter-spacing: 0.02625rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.0175rem;
+}
+
+.live {
+  background: #00b453;
+}
+
+.stay {
+  background: #006fe0;
+}
+
+.btn_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.card_slider {
+  display: flex;
+  gap: 2rem;
+  width: 900px;
+}
+
+.card-title {
+  margin-top: 1.07rem;
+  color: #1f1e1d;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 160%; 
+  letter-spacing: 0.01125rem;
+}
+
+.card-description {
+  color: #1f1e1d;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
